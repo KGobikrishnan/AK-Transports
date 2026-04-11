@@ -1,6 +1,46 @@
+import Lenis from 'lenis';
 import './style.css';
 
+// Initialize Lenis Smooth Scroll
+const lenis = new Lenis({
+  autoRaf: true,
+});
+
+// Lenis scroll event listeners (Parallax & Progress)
+lenis.on('scroll', (e) => {
+  const scrollProgress = document.getElementById('scroll-progress');
+  if (scrollProgress) {
+    const scrollDepth = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight);
+    scrollProgress.style.width = `${scrollDepth * 100}%`;
+  }
+
+  const heroBg = document.querySelector('.hero-bg');
+  if (heroBg) {
+    heroBg.style.transform = `translateY(${window.scrollY * 0.4}px)`;
+  }
+});
+
 document.addEventListener('DOMContentLoaded', () => {
+  // Custom Cursor Logic
+  const cursor = document.getElementById('custom-cursor');
+  
+  document.addEventListener('mousemove', (e) => {
+    if (cursor) {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top = e.clientY + 'px';
+    }
+  });
+
+  const interactiveElements = document.querySelectorAll('a, button, .menu-toggle, .fleet-card');
+  interactiveElements.forEach(el => {
+    el.addEventListener('mouseenter', () => {
+      if (cursor) cursor.classList.add('hover');
+    });
+    el.addEventListener('mouseleave', () => {
+      if (cursor) cursor.classList.remove('hover');
+    });
+  });
+
   // Mobile Menu Toggle
   const menuToggle = document.getElementById('menu-toggle');
   const nav = document.getElementById('nav');
