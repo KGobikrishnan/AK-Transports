@@ -996,6 +996,15 @@ body:hover .custom-cursor {
     font-size: 1.6rem;
   }
 
+  .logo-text {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  .logo-img {
+    height: 38px;
+  }
+
   .hero {
     text-align: center;
     padding: 1.5rem 0;
