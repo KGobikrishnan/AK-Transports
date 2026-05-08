@@ -177,15 +177,15 @@ main {
 }
 
 .logo-img {
-  height: 45px;
+  height: 47px;
   width: auto;
   object-fit: contain;
 }
 
 .logo-text {
   font-family: var(--font-heading);
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 1.94rem;
+  font-weight: 500;
   color: #000000;
   text-transform: uppercase;
   letter-spacing: 1px;
