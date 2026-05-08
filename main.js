@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  const interactiveElements = document.querySelectorAll('a, button, .menu-toggle, .fleet-card');
+  const interactiveElements = document.querySelectorAll('a, button, .menu-toggle, .gallery-item');
   interactiveElements.forEach(el => {
     el.addEventListener('mouseenter', () => {
       if (cursor) cursor.classList.add('hover');

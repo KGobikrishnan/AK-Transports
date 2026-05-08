@@ -1,264 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="AK-Transports - Premium Commercial Truck Rental Services. We provide Ashok Leyland and BharatBenz trucks for load-based and travel distance rentals." />
-    <title>AK-Transports | Premium Truck Rentals</title>
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/style.css" />
-  </head>
-  <body>
-    <!-- Custom Cursor -->
-    <div class="custom-cursor" id="custom-cursor"></div>
-    <!-- Scroll Progress -->
-    <div class="scroll-progress-container">
-      <div class="scroll-progress" id="scroll-progress"></div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="AK-Transports - Premium Commercial Truck Rental Services. We provide Ashok Leyland and BharatBenz trucks for load-based and travel distance rentals." />
+  <title>AK-Transports | Premium Truck Rentals</title>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/style.css" />
+  <!-- Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+  <!-- Custom Cursor -->
+  <div class="custom-cursor" id="custom-cursor"></div>
+  <!-- Scroll Progress -->
+  <div class="scroll-progress-container">
+    <div class="scroll-progress" id="scroll-progress"></div>
+  </div>
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header-container">
+      <a href="#" class="logo">
+        <img src="/assets/logo.png" alt="AK Logo" class="logo-img">
+        <span class="logo-text">Transports</span>
+      </a>
+
+      <!-- Mobile Menu Toggler -->
+      <button class="menu-toggle" aria-label="Toggle menu" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Navigation -->
+      <nav class="nav" id="nav">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#contact" class="nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
     </div>
-    <!-- Header -->
-    <header class="header" id="header">
-      <div class="container header-container">
-        <a href="#" class="logo">AK<span>Transports</span></a>
-        
-        <!-- Mobile Menu Toggler -->
-        <button class="menu-toggle" aria-label="Toggle menu" id="menu-toggle">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+  </header>
 
-        <!-- Navigation -->
-        <nav class="nav" id="nav">
-          <ul class="nav-list">
-            <li><a href="#home" class="nav-link">Home</a></li>
-            <li><a href="#about" class="nav-link">About</a></li>
-            <li><a href="#fleet" class="nav-link">Our Fleet</a></li>
-            <li><a href="#contact" class="nav-link">Contact Us</a></li>
-          </ul>
-        </nav>
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <h1 class="hero-title reveal">Heavy Duty <span>Performance.</span></h1>
+        <p class="hero-subtitle reveal drop-delay-1">Premium commercial truck rentals for your toughest loads. Get
+          moving with AK-Transports.</p>
+        <a href="#fleet" class="btn btn-primary reveal drop-delay-2">View Our Fleet</a>
       </div>
-    </header>
+    </section>
 
-    <main>
-      <!-- Hero Section -->
-      <section class="hero" id="home">
-        <div class="hero-bg"></div>
-        <div class="hero-overlay"></div>
-        <div class="container hero-content">
-          <h1 class="hero-title reveal">Heavy Duty <span>Performance.</span></h1>
-          <p class="hero-subtitle reveal drop-delay-1">Premium commercial truck rentals for your toughest loads. Get moving with AK-Transports.</p>
-          <a href="#fleet" class="btn btn-primary reveal drop-delay-2">View Our Fleet</a>
+    <!-- Infinite Marquee -->
+    <div class="marquee-section">
+      <div class="marquee-inner">
+        <div class="marquee-content">
+          <span class="marquee-item">PREMIUM TRUCKS</span><span class="marquee-separator">•</span>
+          <span class="marquee-item">HEAVY LOGISTICS</span><span class="marquee-separator">•</span>
+          <span class="marquee-item">PAN INDIA PERMIT</span><span class="marquee-separator">•</span>
+          <span class="marquee-item">LOAD BASED COSTING</span><span class="marquee-separator">•</span>
+          <!-- Duplicate for seamless scroll -->
+          <span class="marquee-item">PREMIUM TRUCKS</span><span class="marquee-separator">•</span>
+          <span class="marquee-item">HEAVY LOGISTICS</span><span class="marquee-separator">•</span>
+          <span class="marquee-item">PAN INDIA PERMIT</span><span class="marquee-separator">•</span>
+          <span class="marquee-item">LOAD BASED COSTING</span><span class="marquee-separator">•</span>
         </div>
-      </section>
-
-      <!-- Infinite Marquee -->
-      <div class="marquee-section">
-        <div class="marquee-inner">
-          <div class="marquee-content">
-            <span class="marquee-item">PREMIUM TRUCKS</span><span class="marquee-separator">•</span>
-            <span class="marquee-item">HEAVY LOGISTICS</span><span class="marquee-separator">•</span>
-            <span class="marquee-item">PAN INDIA PERMIT</span><span class="marquee-separator">•</span>
-            <span class="marquee-item">LOAD BASED COSTING</span><span class="marquee-separator">•</span>
-            <!-- Duplicate for seamless scroll -->
-            <span class="marquee-item">PREMIUM TRUCKS</span><span class="marquee-separator">•</span>
-            <span class="marquee-item">HEAVY LOGISTICS</span><span class="marquee-separator">•</span>
-            <span class="marquee-item">PAN INDIA PERMIT</span><span class="marquee-separator">•</span>
-            <span class="marquee-item">LOAD BASED COSTING</span><span class="marquee-separator">•</span>
-          </div>
-          <div class="marquee-content" aria-hidden="true">
-            <span class="marquee-item">PREMIUM TRUCKS</span><span class="marquee-separator">•</span>
-            <span class="marquee-item">HEAVY LOGISTICS</span><span class="marquee-separator">•</span>
-            <span class="marquee-item">PAN INDIA PERMIT</span><span class="marquee-separator">•</span>
-            <span class="marquee-item">LOAD BASED COSTING</span><span class="marquee-separator">•</span>
-            <span class="marquee-item">PREMIUM TRUCKS</span><span class="marquee-separator">•</span>
-            <span class="marquee-item">HEAVY LOGISTICS</span><span class="marquee-separator">•</span>
-            <span class="marquee-item">PAN INDIA PERMIT</span><span class="marquee-separator">•</span>
-            <span class="marquee-item">LOAD BASED COSTING</span><span class="marquee-separator">•</span>
-          </div>
+        <div class="marquee-content" aria-hidden="true">
+          <span class="marquee-item">PREMIUM TRUCKS</span><span class="marquee-separator">•</span>
+          <span class="marquee-item">HEAVY LOGISTICS</span><span class="marquee-separator">•</span>
+          <span class="marquee-item">PAN INDIA PERMIT</span><span class="marquee-separator">•</span>
+          <span class="marquee-item">LOAD BASED COSTING</span><span class="marquee-separator">•</span>
+          <span class="marquee-item">PREMIUM TRUCKS</span><span class="marquee-separator">•</span>
+          <span class="marquee-item">HEAVY LOGISTICS</span><span class="marquee-separator">•</span>
+          <span class="marquee-item">PAN INDIA PERMIT</span><span class="marquee-separator">•</span>
+          <span class="marquee-item">LOAD BASED COSTING</span><span class="marquee-separator">•</span>
         </div>
       </div>
+    </div>
 
-      <!-- About Section -->
-      <section class="about section" id="about">
-        <div class="container">
-          <div class="section-header reveal">
-            <h2 class="section-title">About Our <span>Business</span></h2>
-            <div class="title-underline"></div>
+    <!-- About Section -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 class="section-title">About Our <span>Business</span></h2>
+          <div class="title-underline"></div>
+        </div>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <h3>Specialized in Payload & Distance</h3>
+            <p>At AK-Transports, we redefine commercial logistics. Whether it's one load of sand or multi-city
+              transport, we provide rugged, reliable trucks tailored to your needs.</p>
+            <p>Our pricing model is transparent and business-friendly: focused purely on the nature of your load and the
+              travel distance required. No hidden fees, just raw power and precision delivered.</p>
+            <ul class="about-features">
+              <li><span class="feature-icon">✔</span> Load-based Costing</li>
+              <li><span class="feature-icon">✔</span> Distance-based Rentals</li>
+              <li><span class="feature-icon">✔</span> Premium Maintained Fleet</li>
+            </ul>
           </div>
-          <div class="about-grid">
-            <div class="about-text reveal">
-              <h3>Specialized in Payload & Distance</h3>
-              <p>At AK-Transports, we redefine commercial logistics. Whether it's one load of sand or multi-city transport, we provide rugged, reliable trucks tailored to your needs.</p>
-              <p>Our pricing model is transparent and business-friendly: focused purely on the nature of your load and the travel distance required. No hidden fees, just raw power and precision delivered.</p>
-              <ul class="about-features">
-                <li><span class="feature-icon">✔</span> Load-based Costing</li>
-                <li><span class="feature-icon">✔</span> Distance-based Rentals</li>
-                <li><span class="feature-icon">✔</span> Premium Maintained Fleet</li>
-              </ul>
+          <div class="about-image-wrapper reveal drop-delay-1">
+            <div class="about-image-placeholder decor-image"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery section" id="gallery">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 class="section-title">Premium <span>Gallery</span></h2>
+          <p class="section-desc">Experience the power and scale of our logistics fleet in motion.</p>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="bento-grid">
+          <!-- Item 1: Large Featured -->
+          <div class="gallery-item g-item-1 reveal">
+            <img src="/assets/f1.jpeg" alt="AK Transports Truck 1" loading="lazy">
+            <div class="gallery-overlay">
+              <span>Heavy Duty 01</span>
             </div>
-            <div class="about-image-wrapper reveal drop-delay-1">
-              <div class="about-image-placeholder decor-image"></div>
+          </div>
+
+          <!-- Item 2: Small -->
+          <div class="gallery-item g-item-2 reveal drop-delay-1">
+            <img src="/assets/f2.jpeg" alt="AK Transports Truck 2" loading="lazy">
+            <div class="gallery-overlay">
+              <span>Precision 02</span>
+            </div>
+          </div>
+
+          <!-- Item 3: Tall Video -->
+          <div class="gallery-item g-item-3 reveal drop-delay-2">
+            <video autoplay loop muted playsinline>
+              <source src="/assets/f7.mp4" type="video/mp4">
+            </video>
+            <div class="gallery-overlay">
+              <span>Motion 07</span>
+            </div>
+          </div>
+
+          <!-- Item 4: Small -->
+          <div class="gallery-item g-item-4 reveal">
+            <img src="/assets/f3.jpeg" alt="AK Transports Truck 3" loading="lazy">
+            <div class="gallery-overlay">
+              <span>Reliable 03</span>
+            </div>
+          </div>
+
+          <!-- Item 5: Wide Featured -->
+          <div class="gallery-item g-item-5 reveal drop-delay-1">
+            <img src="/assets/f4.jpeg" alt="AK Transports Truck 4" loading="lazy">
+            <div class="gallery-overlay">
+              <span>Performance 04</span>
+            </div>
+          </div>
+
+          <!-- Item 6: Small -->
+          <div class="gallery-item g-item-6 reveal drop-delay-2">
+            <img src="/assets/f5.jpeg" alt="AK Transports Truck 5" loading="lazy">
+            <div class="gallery-overlay">
+              <span>Load 05</span>
+            </div>
+          </div>
+
+          <!-- Item 7: Wide Video -->
+          <div class="gallery-item g-item-7 reveal">
+            <video autoplay loop muted playsinline>
+              <source src="/assets/f8.mp4" type="video/mp4">
+            </video>
+            <div class="gallery-overlay">
+              <span>Gethu 08</span>
+            </div>
+          </div>
+
+          <!-- Item 8: Small -->
+          <div class="gallery-item g-item-8 reveal drop-delay-1">
+            <img src="/assets/f6.jpeg" alt="AK Transports Truck 6" loading="lazy">
+            <div class="gallery-overlay">
+              <span>Transport 06</span>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Gallery / Fleet Section -->
-      <section class="fleet section" id="fleet">
-        <div class="container">
-          <div class="section-header reveal">
-            <h2 class="section-title">Our Premium <span>Fleet</span></h2>
-            <p class="section-desc">Command the road with our mighty Ashok Leyland and BharatBenz trucks.</p>
-            <div class="title-underline"></div>
+    <!-- Capabilities Section -->
+    <section class="capabilities section">
+      <div class="container">
+        <div class="capabilities-grid">
+          <div class="capability-card reveal">
+            <div class="cap-icon"><i data-lucide="truck"></i></div>
+            <h3>Specialized Fleet</h3>
+            <p>Equipped with high-performance <strong>JCBs, Tractors, and Tippers</strong> to handle any terrain and task with maximum efficiency.</p>
           </div>
-
-          <!-- Ashok Leyland -->
-          <h3 class="fleet-category-title reveal">Ashok Leyland <span>(2 Trucks)</span></h3>
-          <div class="fleet-grid">
-            <div class="fleet-card reveal">
-              <div class="card-image-wrapper">
-                <img src="/assets/ashok-1.png" alt="Ashok Leyland Truck 1" loading="lazy" class="fleet-img fallback-img" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'100%\' height=\'100%\' style=\'background:<hash>e9ecef\'></svg>'; this.className='fleet-img placeholder-loaded'" />
-              </div>
-              <div class="card-content">
-                <h4>AL Master Carrier</h4>
-                <p>Heavy duty performance for rugged terrains.</p>
-              </div>
-            </div>
-            <div class="fleet-card reveal drop-delay-1">
-              <div class="card-image-wrapper">
-                <img src="/assets/ashok-2.png" alt="Ashok Leyland Truck 2" loading="lazy" class="fleet-img fallback-img" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'100%\' height=\'100%\' style=\'background:<hash>e9ecef\'></svg>'; this.className='fleet-img placeholder-loaded'" />
-              </div>
-              <div class="card-content">
-                <h4>AL Titan Hauler</h4>
-                <p>Maxmized payload capacity for sand and gravel.</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- BharatBenz -->
-          <h3 class="fleet-category-title reveal" style="margin-top: 4rem;">BharatBenz <span>(3 Trucks)</span></h3>
-          <div class="fleet-grid bharat-grid">
-            <div class="fleet-card reveal">
-              <div class="card-image-wrapper">
-                <img src="/assets/bharat-1.png" alt="BharatBenz Truck 1" loading="lazy" class="fleet-img fallback-img" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'100%\' height=\'100%\' style=\'background:<hash>e9ecef\'></svg>'; this.className='fleet-img placeholder-loaded'" />
-              </div>
-              <div class="card-content">
-                <h4>BB Powerliner 1</h4>
-                <p>Precision engineering for long hauls.</p>
-              </div>
-            </div>
-            <div class="fleet-card reveal drop-delay-1">
-              <div class="card-image-wrapper">
-                <img src="/assets/bharat-2.png" alt="BharatBenz Truck 2" loading="lazy" class="fleet-img fallback-img" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'100%\' height=\'100%\' style=\'background:<hash>e9ecef\'></svg>'; this.className='fleet-img placeholder-loaded'" />
-              </div>
-              <div class="card-content">
-                <h4>BB Powerliner 2</h4>
-                <p>Unmatched fuel efficiency and durability.</p>
-              </div>
-            </div>
-            <div class="fleet-card reveal drop-delay-2">
-              <div class="card-image-wrapper">
-                <img src="/assets/bharat-3.png" alt="BharatBenz Truck 3" loading="lazy" class="fleet-img fallback-img" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'100%\' height=\'100%\' style=\'background:<hash>e9ecef\'></svg>'; this.className='fleet-img placeholder-loaded'" />
-              </div>
-              <div class="card-content">
-                <h4>BB Torq 3</h4>
-                <p>High torque engine for steep gradients.</p>
-              </div>
-            </div>
+          <div class="capability-card reveal drop-delay-1">
+            <div class="cap-icon"><i data-lucide="package"></i></div>
+            <h3>Scalable Supply</h3>
+            <p>Material supply executed with precision. We offer flexible delivery in <strong>1, 2, 4, 6, 8, and 10-unit Tipper configurations</strong> tailored to your project needs.</p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Contact Section -->
-      <section class="contact section" id="contact">
-        <div class="container">
-          <div class="section-header reveal">
-            <h2 class="section-title">Get In <span>Touch</span></h2>
-            <div class="title-underline"></div>
-            <p class="section-desc">Ready to move your load? Contact us today for a precise quote based on distance and material.</p>
-          </div>
-          
-          <div class="contact-wrapper">
-            <div class="contact-info reveal">
-              <div class="info-item">
-                <h4>Location</h4>
-                <p>123 Transport Nagar, Chennai, TN, India</p>
-              </div>
-              <div class="info-item">
-                <h4>Call Us</h4>
-                <p>+91 98765 43210</p>
-              </div>
-              <div class="info-item">
-                <h4>Email</h4>
-                <p>bookings@aktransports.in</p>
-              </div>
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 class="section-title">Get In <span>Touch</span></h2>
+          <div class="title-underline"></div>
+          <p class="section-desc">Ready to move your load? Contact us today for a precise quote based on distance and
+            material.</p>
+        </div>
+
+        <div class="contact-wrapper no-info">
+          <form class="contact-form reveal"
+            onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Your Name" required />
             </div>
+            <div class="form-group">
+              <input type="tel" class="form-control" placeholder="Phone Number" required />
+            </div>
+            <div class="form-group">
+              <select class="form-control" required>
+                <option value="" disabled selected>Select Load Type</option>
+                <option value="sand">Sand / Gravel</option>
+                <option value="cement">Cement</option>
+                <option value="steel">Steel / Iron</option>
+                <option value="other">Other Commercial</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" rows="4" placeholder="Distance & Additional Details" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Send Inquiry</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Map Section -->
+    <section class="section map-section reveal" style="padding-top: 0;">
+      <div class="container" style="display: flex; flex-direction: column; align-items: center;">
+        <h2 class="section-title" style="margin-bottom: 3rem;">Our <span>Location</span></h2>
+        <div class="map-container">
+          <iframe class="map-iframe"
+            src="https://maps.google.com/maps?q=9.7601932,77.3027696+(AK+Group+of+Companies)&t=&z=16&ie=UTF8&iwloc=&output=embed"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <a href="https://maps.app.goo.gl/hVoLXpLrPgF7wkQC8" target="_blank" class="map-link"
+            aria-label="Open AK Transports in Google Maps">
+            <div class="map-overlay">
+              <span class="btn btn-primary">Open in Google Maps</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-            <form class="contact-form reveal drop-delay-1" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Name" required />
-              </div>
-              <div class="form-group">
-                <input type="tel" class="form-control" placeholder="Phone Number" required />
-              </div>
-              <div class="form-group">
-                <select class="form-control" required>
-                  <option value="" disabled selected>Select Load Type</option>
-                  <option value="sand">Sand / Gravel</option>
-                  <option value="cement">Cement</option>
-                  <option value="steel">Steel / Iron</option>
-                  <option value="other">Other Commercial</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" rows="4" placeholder="Distance & Additional Details" required></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary btn-block">Send Inquiry</button>
-            </form>
-          </div>
-        </div>
-      </section>
-      <!-- Map Section -->
-      <section class="section map-section reveal" style="padding-top: 0;">
-        <div class="container" style="display: flex; flex-direction: column; align-items: center;">
-          <h2 class="section-title" style="margin-bottom: 3rem;">Our <span>Location</span></h2>
-          <div class="map-container">
-            <iframe class="map-iframe" src="https://maps.google.com/maps?q=9.7601932,77.3027696+(AK+Group+of+Companies)&t=&z=16&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <a href="https://maps.app.goo.gl/hVoLXpLrPgF7wkQC8" target="_blank" class="map-link" aria-label="Open AK Transports in Google Maps">
-              <div class="map-overlay">
-                <span class="btn btn-primary">Open in Google Maps</span>
-              </div>
-            </a>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container footer-content">
-        <div class="footer-brand">
-          <h2>AK<span>Transports</span></h2>
-          <p>The premium choice for heavy loads. Distance or weight, we deliver gethu.</p>
-        </div>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <img src="/assets/logo.png" alt="AK Logo" class="logo-img" loading="lazy">
+          <span class="logo-text" style="color: #fff;">Transports</span>
+        </a>
+        <p>The premium choice for heavy loads. Distance or weight, we deliver gethu.</p>
+      </div>
+      
+      <div class="footer-links-grid">
         <div class="footer-links">
           <h4>Quick Links</h4>
           <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#fleet">Fleet</a></li>
+            <li><a href="#gallery">Gallery</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 AK-Transports. All rights reserved. | Designed by <strong>Navi Promotions</strong></p>
-      </div>
-    </footer>
 
-    <script type="module" src="/main.js"></script>
-  </body>
+        <div class="footer-hq">
+          <h4>HEADQUARTERS</h4>
+          <ul class="hq-info">
+            <li>
+              <i data-lucide="map-pin"></i>
+              <span>Indira colony,<br>C.Pudupatti,<br>Cumbum - 625556.<br>Theni (Dt)</span>
+            </li>
+            <li>
+              <i data-lucide="phone"></i>
+              <span>+91 93622 25555<br>+91 97881 11666</span>
+            </li>
+            <li>
+              <i data-lucide="mail"></i>
+              <span>akcumbum@gmail.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 AK-Transports. All rights reserved. <br /> Designed by <a href="https://www.navipromotions.in/" target="_blank" rel="noopener noreferrer"><strong>Navi Promotions</strong></a></p>
+    </div>
+  </footer>
+
+  <script type="module" src="/main.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+
 </html>
